@@ -10,11 +10,9 @@ else
 fi
 
 #get log in info
-#read -p "Tumblr login email: " EMAIL
-EMAIL="androd94@ymail.com"
+read -p "Tumblr login email: " EMAIL
 
-#read -p "Tumblr login password: " PASSWRD
-PASSWRD="andy223"
+read -p "Tumblr login password: " PASSWRD
 
 #log in to get cookies for later
 wget --user-agent=Mozilla/5.0 -q --save-cookies tumblr_cookie.txt --post-data "email=$EMAIL&password=$PASSWRD" --no-check-certificate https://www.tumblr.com/login
